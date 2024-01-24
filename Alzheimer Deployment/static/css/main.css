@@ -1,0 +1,82 @@
+.img-preview {
+
+    width: 256px;
+    height: 256px;
+    position: relative;
+    border: 5px solid #0B2F3A';
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    margin-bottom: 1em;    
+}
+
+.img-preview>div {
+
+    width: 100%;
+    height: 100%;
+    background-size: 256px 256px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-label{
+    display: inline-block;
+    padding: 12px 30px;
+    width:200px;
+    text-align:center;
+    background:#001233;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    margin:1em auto;
+    cursor: pointer;
+}
+body {
+ background-color: #0B2F3A;
+}
+#btn-predict {
+    display: block;
+    margin: 1em 0 1em 2em; /* Top 1em, Right 0, Bottom 1em, Left 2em */
+    padding: 12px 30px;
+    background: #001233; /* Blue background */
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer;
+    transition: background 0.4s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+#btn-predict:hover {
+    background: #001233; /* Darker blue on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Enhance box shadow on hover */
+}
+
+
+.upload-label:hover{
+    background: #001233;
+    color: #fff;
+}
+
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+#brand {
+  height:100%
+  width:100%; 
+  color:#fca311;
+  background-color: #0B2F3A; 
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

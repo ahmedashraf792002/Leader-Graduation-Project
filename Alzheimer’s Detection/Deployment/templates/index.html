@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzheimer's Disease Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="background"></div> <!-- New element for background color -->
+    <div class="container-wrapper">
+        <div class="container">
+            <h1 class="heading-border">Alzheimer's Disease Recognition Application Using Deep Learning</h1>
+            <p>This is a Flask app for Alzheimer's Disease Detection Created By Leader.</p>
+            <p>~𝔄ℌ𝔐𝔈𝔇 𝔄𝔖ℌℜ𝔄𝔉 .</p>
+        </div>
+        <div class="upload-container">
+            <label for="upload" class="upload-label">Upload Image</label> <!-- Label for file input -->
+            <input type="file" id="upload" accept="image/*">
+        </div>
+        <div id="image-container" class="image-container"></div>
+        <button id="prediction-btn" class="upload-label" style="display: none;">Prediction</button> <!-- Prediction button initially hidden -->
+        <div id="result" class="result"></div> <!-- Result container -->
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
